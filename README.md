@@ -5,12 +5,6 @@ En este videojuego, existen personajes cuyo objetivo es minar materiales y const
 Los personajes tienen un nombre, un puntaje y un inventario con todos los materiales que poseen. De un mismo material se pueden tener varias unidades.
 Para ello, se define el siguiente tipo de dato
 
-data Personaje = UnPersonaje {
-	nombre:: String,
-	puntaje:: Int,
-	inventario:: [Material]
-} deriving Show
-
 Craft
 Craftear consiste en construir objetos a partir de otros objetos. Para ello se cuenta con recetas que consisten en una lista de materiales que se requieren para craftear un nuevo objeto. En ninguna receta hace falta más de una unidad del mismo material. La receta también especifica el tiempo que tarda en construirse. Todo material puede ser componente de una receta y todo objeto resultante de una receta también es un material y puede ser parte en la receta de otro.
 Por ejemplo:
